@@ -21,5 +21,8 @@
 # Go workspace file
 #go.work
 
+# do not include the test folder
+/test
+
 # corrected
 /corrected
