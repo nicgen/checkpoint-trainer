@@ -9,13 +9,15 @@ go run app/main.go
 # good luck with your revisions 
 ```
 
-Note: some exercices have a placeholder to avoid errors, please erase them.
+Notes:
+- some exercices have a placeholder to avoid errors, please erase them.
+- `PrintRune` is already integrated
 
 ## Participate
 
-Please, if you find some errors or a better way to handle some exercises, please fork it and submit a pull request.
+If you find some errors or a better way to handle some exercises, please fork-it and submit a pull request.
 
 ## Attribution
 
-Thanks to RAFTANDJANI DJIHADI aka Rafta for the idea and part of the code.
+Thanks to RAFTANDJANI DJIHADI aka Rafta for the idea and part of the code.  
 All the exercises proposed are attributed to [01Edu](https://github.com/01-edu/public).
