@@ -109,7 +109,6 @@ func removeFilesInDir(dir string) error {
 
 // copyFile copies a file from src to dst
 func copyFile(src, dst string) {
-	fmt.Println("SRC: ", src)
 	sourceFile, err := os.Open(src)
 	if err != nil {
 		fmt.Printf("Error opening source file: %v\n", err)
