@@ -47,6 +47,21 @@ func main() {
 		return
 	}
 
+	sentences := []string{
+		"Another day, another migraine.",
+		"Oh, my aching tentacles!",
+		"It all started when I was born.",
+		"Here, please hit me as hard as you can.",
+		"Too bad that didn't kill me.",
+		"Being dead, or anything else!",
+		"I’m not just ready to go to work, I'm ready to go home.",
+		"Happiness is overrated.",
+		"Happiness? Is that something you eat?",
+		"Happiness is fleeting, but misery is forever.",
+	}
+	randomSentence := chooseRandomString(sentences)
+	printAscii(randomSentence)
+
 	// Process each category in order and copy a randomly selected subject file
 	for _, category := range getOrderedCategories() {
 		subjects := categories[category]
@@ -226,4 +241,35 @@ func openWithDefaultCodeEditor(dir string) {
 	if err := cmd.Start(); err != nil {
 		fmt.Printf("Error opening directory with default editor: %v\n", err)
 	}
+}
+
+func printAscii(str string) {
+	fmt.Printf(`
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡀⠠⠤⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣀⢤⡒⠉⠁⠀⠒⢂⡀⠀⠀⠀⠈⠉⣒⠤⣀⠀⠀⠀⠀
+⠀⠀⣠⠾⠅⠈⠀⠙⠀⠀⠀⠈⠀⠀⢀⣀⣓⡀⠉⠀⠬⠕⢄⠀⠀
+⠀⣰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠶⢦⡀⠑⠀⠀⠀⠀⠈⢧⠀
+⠀⡇⠀⠀⠀⠀⠀⢤⣀⣀⣀⣀⡀⢀⣀⣀⠙⠀⠀⠀⠀⠀⠀⢸⡄
+⠀⢹⡀⠀⠀⠀⠀⡜⠁⠀⠀⠙⡴⠁⠀⠀⠱⡄⠀⠀⠀⠀⠀⣸⠀
+⠀⠀⠱⢄⡀⠀⢰⣁⣒⣒⣂⣰⣃⣀⣒⣒⣂⢣⠀⠀⠀⢀⡴⠁⠀
+⠀⠀⠀⠀⠙⠲⢼⡀⠀⠙⠀⢠⡇⠀⠛⠀⠀⣌⣀⡤⠖⠉⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⡗⢄⣀⡠⠊⠈⢦⣀⣀⠔⡏⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⡇⠀⢰⠁⠀⠀⠀⢣⠀⠀⣷⠀⠀⠀⠀%v
+⠀⠀⠀⠀⣠⠔⠊⠉⠁⡏⠀⠀⠀⠀⠘⡆⠤⠿⣄⣀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣧⠸⠒⣚⡩⡇⠀⠀⠀⠀⠀⣏⣙⠒⢴⠈⡇⠀⠀⠀⠀
+⠀⠀⠀⠀⠈⠋⠉⠀⠀⢳⡀⠀⠀⠀⣸⠁⠈⠉⠓⠚⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠛⠛
+
+`, str)
+}
+
+func chooseRandomString(choices []string) string {
+	// Seed the random number generator to ensure different results each run
+	// rand.Seed(time.Now().UnixNano())
+
+	// Generate a random index in the range [0, len(choices)-1]
+	randomIndex := rand.Intn(len(choices))
+
+	// Return the string at the random index
+	return choices[randomIndex]
 }
