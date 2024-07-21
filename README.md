@@ -1,11 +1,15 @@
 # Checkpoint trainer
 
+This app will choose a serie of exercices for you, no more excuses.  
+
 ## Usage
 
 ```sh
 git clone https://github.com/nicgen/checkpoint-trainer.git
 cd checkpoint-trainer
 go run app/main.go
+# your tests are now created, go to the test directory and begin your work
+cd test/
 # good luck with your revisions 
 ```
 
