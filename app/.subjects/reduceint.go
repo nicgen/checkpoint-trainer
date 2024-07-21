@@ -1,7 +1,6 @@
 package main
 
 func reduceint(a []int, f func(int, int) int) {
-	return 0 //placeholder
 }
 
 // equivalent of the main test

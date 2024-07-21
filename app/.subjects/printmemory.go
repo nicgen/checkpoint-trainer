@@ -5,6 +5,6 @@ func printmemory(arr [10]byte) {
 }
 
 // equivalent of the main test
-func PrintMemory(arr [10]byte) {
+func PrintMemory() {
 	printmemory([10]byte{'h', 'e', 'l', 'l', 'o', 16, 21, '*'})
 }

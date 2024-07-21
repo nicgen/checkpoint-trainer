@@ -6,7 +6,7 @@ func repeatalpha(s string) string {
 	return " " //placeholder
 }
 
-func RepeatAlpha(s string) string {
+func RepeatAlpha() {
 	fmt.Println(repeatalpha("abc"))
 	fmt.Println(repeatalpha("Choumi."))
 	fmt.Println(repeatalpha(""))
