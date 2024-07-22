@@ -16,7 +16,7 @@ import (
 // Categories and their corresponding subjects
 var categories = map[string][]string{
 	"10%":  {"DisplayAlpham", "DisplayAlrevm", "DisplayFirstparam", "DisplayLastparam", "ParamCount", "PrintDigits"},
-	"20%":  {"CountDown", "Strlen", "WdMatch"},
+	"20%":  {"CountDown", "StrLen", "WdMatch"},
 	"30%":  {"FirstRune", "LastRune", "LastWord", "ReduceInt"},
 	"40%":  {"AlphaMirror", "Chunk", "Doop", "FindPrevPrime", "FoldInt", "SearchReplace", "TabMult"},
 	"50%":  {"Inter", "IsPowerof2", "PigLatin", "PrintBits", "ReverseBits", "RomanNumbers", "SwapBits", "Union"},
@@ -47,19 +47,24 @@ func main() {
 		return
 	}
 
-	sentences := []string{
+	// Squidward?
+	SquidwardWisdom := []string{
 		"Another day, another migraine.",
 		"Oh, my aching tentacles!",
 		"It all started when I was born.",
 		"Here, please hit me as hard as you can.",
 		"Too bad that didn't kill me.",
 		"Being dead, or anything else!",
-		"I’m not just ready to go to work, I'm ready to go home.",
+		"I'm not just ready to go to work, I'm ready to go home.",
 		"Happiness is overrated.",
 		"Happiness? Is that something you eat?",
 		"Happiness is fleeting, but misery is forever.",
+		"Why is it that whenever I'm having fun, it's wrong?",
+		"Do you have barnacles for brains?",
+		"I don't know what's worse: your breath or your ideas.",
+		"Just get me out of here!",
 	}
-	randomSentence := chooseRandomString(sentences)
+	randomSentence := chooseRandomString(SquidwardWisdom)
 	printAscii(randomSentence)
 
 	// Process each category in order and copy a randomly selected subject file
@@ -243,6 +248,7 @@ func openWithDefaultCodeEditor(dir string) {
 	}
 }
 
+// because we all need some motivation
 func printAscii(str string) {
 	fmt.Printf(`
 ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡀⠠⠤⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -265,7 +271,6 @@ func printAscii(str string) {
 
 func chooseRandomString(choices []string) string {
 	// Seed the random number generator to ensure different results each run
-	// rand.Seed(time.Now().UnixNano())
 
 	// Generate a random index in the range [0, len(choices)-1]
 	randomIndex := rand.Intn(len(choices))
