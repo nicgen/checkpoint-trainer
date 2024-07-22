@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func split(s, sep string) []string {
-	return " " //placeholder
+	return []string{"placeholder"} //placeholder
 }
 
 // equivalent of the main test
