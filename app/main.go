@@ -17,10 +17,10 @@ import (
 var categories = map[string][]string{
 	"10%":  {"DisplayAlpham", "DisplayAlrevm", "DisplayFirstparam", "DisplayLastparam", "ParamCount", "PrintDigits", "CheckNumber"},
 	"20%":  {"CountDown", "StrLen", "WdMatch", "PrintIf", "PrintIfNot", "RectPerimeter"},
-	"30%":  {"FirstRune", "LastRune", "LastWord", "ReduceInt", "HashCode"},
+	"30%":  {"Gcd", "FirstRune", "LastRune", "LastWord", "ReduceInt", "HashCode"},
 	"40%":  {"AlphaMirror", "Chunk", "Doop", "FindPrevPrime", "FoldInt", "SearchReplace", "TabMult", "RetainFirstHalf"},
 	"50%":  {"Inter", "IsPowerof2", "PigLatin", "PrintBits", "ReverseBits", "RomanNumbers", "SwapBits", "Union"},
-	"60%":  {"Gcd", "PrintHex", "RepeatAlpha", "SortWordArr", "ZipString"},
+	"60%":  {"PrintHex", "RepeatAlpha", "SortWordArr", "ZipString"},
 	"70%":  {"AddPrimeSum", "Fprime", "Hiddenp", "Revwstr", "Rostring", "Split"},
 	"80%":  {"AtoiBase", "Itoa"},
 	"90%":  {"Brackets", "ListSize", "Options", "PrintMemory", "RpnCalc"},
