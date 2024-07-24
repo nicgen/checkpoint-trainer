@@ -16,6 +16,7 @@ cd test/
 Notes:
 - some exercices have placeholders to avoid errors, just erase them.
 - `PrintRune` is already integrated
+- before running any test, uncomment the tested function in your main.go
 
 ## Architecture
 
