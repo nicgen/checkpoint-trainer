@@ -11,6 +11,7 @@ import (
 	"path/filepath"
 	"runtime"
 	"strings"
+	"time"
 )
 
 // Categories and their corresponding subjects
@@ -271,7 +272,7 @@ func printAscii(str string) {
 
 func chooseRandomString(choices []string) string {
 	// Seed the random number generator to ensure different results each run
-
+	rand.Seed(time.Now().UnixNano())
 	// Generate a random index in the range [0, len(choices)-1]
 	randomIndex := rand.Intn(len(choices))
 
