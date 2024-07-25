@@ -1,7 +1,7 @@
 package main
 
 func printmemory(arr [10]byte) {
-	return 0 //placeholder
+	return //placeholder
 }
 
 // equivalent of the main test
