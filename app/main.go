@@ -11,15 +11,16 @@ import (
 	"path/filepath"
 	"runtime"
 	"strings"
+	"time"
 )
 
 // Categories and their corresponding subjects
 var categories = map[string][]string{
 	"10%":  {"DisplayAlpham", "DisplayAlrevm", "DisplayFirstparam", "DisplayLastparam", "ParamCount", "PrintDigits", "CheckNumber"},
-	"20%":  {"CountDown", "StrLen", "WdMatch", "PrintIf", "PrintIfNot", "RectPerimeter"},
+	"20%":  {"CountDown", "StrLen", "PrintIf", "PrintIfNot", "RectPerimeter"},
 	"30%":  {"Gcd", "FirstRune", "LastRune", "LastWord", "ReduceInt", "HashCode"},
 	"40%":  {"AlphaMirror", "Chunk", "Doop", "FindPrevPrime", "FoldInt", "SearchReplace", "TabMult", "RetainFirstHalf"},
-	"50%":  {"Inter", "IsPowerof2", "PigLatin", "PrintBits", "ReverseBits", "RomanNumbers", "SwapBits", "Union"},
+	"50%":  {"Inter", "IsPowerof2", "PigLatin", "PrintBits", "ReverseBits", "RomanNumbers", "SwapBits", "Union", "WdMatch"},
 	"60%":  {"PrintHex", "RepeatAlpha", "SortWordArr", "ZipString"},
 	"70%":  {"AddPrimeSum", "Fprime", "Hiddenp", "Revwstr", "Rostring", "Split"},
 	"80%":  {"AtoiBase", "Itoa"},
@@ -271,7 +272,7 @@ func printAscii(str string) {
 
 func chooseRandomString(choices []string) string {
 	// Seed the random number generator to ensure different results each run
-
+	rand.Seed(time.Now().UnixNano())
 	// Generate a random index in the range [0, len(choices)-1]
 	randomIndex := rand.Intn(len(choices))
 
