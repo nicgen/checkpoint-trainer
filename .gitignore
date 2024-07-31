@@ -29,3 +29,6 @@
 
 # new
 app/new/
+
+# bash script
+test.sh
