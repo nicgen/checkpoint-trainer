@@ -6,6 +6,7 @@ func firstrune(s string) rune {
 	return '0' //placeholder
 }
 
+// equivalent of the main test
 func FirstRune() {
 	z01.PrintRune(firstrune("Hello!"))
 	z01.PrintRune(firstrune("Salut!"))

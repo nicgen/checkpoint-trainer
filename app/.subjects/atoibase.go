@@ -6,6 +6,7 @@ func atoibase(s string, base string) int {
 	return 0 //placeholder
 }
 
+// equivalent of the main test
 func AtoiBase() {
 	fmt.Println(atoibase("125", "0123456789"))
 	fmt.Println(atoibase("1111101", "01"))

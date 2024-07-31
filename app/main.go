@@ -18,14 +18,14 @@ import (
 var categories = map[string][]string{
 	"10%":  {"DisplayAlpham", "DisplayAlrevm", "DisplayFirstparam", "DisplayLastparam", "ParamCount", "PrintDigits", "CheckNumber"},
 	"20%":  {"CountDown", "StrLen", "PrintIf", "PrintIfNot", "RectPerimeter"},
-	"30%":  {"Gcd", "FirstRune", "LastRune", "LastWord", "ReduceInt", "HashCode"},
-	"40%":  {"AlphaMirror", "Chunk", "Doop", "FindPrevPrime", "FoldInt", "SearchReplace", "TabMult", "RetainFirstHalf"},
-	"50%":  {"Inter", "IsPowerof2", "PigLatin", "PrintBits", "ReverseBits", "RomanNumbers", "SwapBits", "Union", "WdMatch"},
-	"60%":  {"PrintHex", "RepeatAlpha", "SortWordArr", "ZipString"},
+	"30%":  {"Gcd", "FirstRune", "LastRune", "LastWord", "ReduceInt", "HashCode", "DigitLen"},
+	"40%":  {"AlphaMirror", "Chunk", "Doop", "FindPrevPrime", "FoldInt", "SearchReplace", "TabMult", "RetainFirstHalf", "IsCapitalized", "PrintMemory", "Itoa"},
+	"50%":  {"Inter", "IsPowerof2", "PigLatin", "PrintBits", "ReverseBits", "RomanNumbers", "SwapBits", "Union", "WdMatch", "ConcatSlice"},
+	"60%":  {"PrintHex", "RepeatAlpha", "SortWordArr", "ZipString", "NotDecimal", "RevConcatAlternate"},
 	"70%":  {"AddPrimeSum", "Fprime", "Hiddenp", "Revwstr", "Rostring", "Split"},
-	"80%":  {"AtoiBase", "Itoa"},
-	"90%":  {"Brackets", "ListSize", "Options", "PrintMemory", "RpnCalc"},
-	"100%": {"Brainfuck", "ItoaBase", "ListRemoveIf"},
+	"80%":  {"AtoiBase", "ItoaBase"},
+	"90%":  {"Brackets", "ListSize", "Options", "RpnCalc"},
+	"100%": {"Brainfuck", "ListRemoveIf"},
 	// Add more categories and subjects as needed
 }
 
