@@ -1,6 +1,19 @@
 # Checkpoint trainer
 
-This app will choose a serie of exercices for you, no more excuses.  
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡀⠠⠤⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
+⠀⠀⠀⠀⣀⢤⡒⠉⠁⠀⠒⢂⡀⠀⠀⠀⠈⠉⣒⠤⣀⠀⠀⠀⠀  
+⠀⠀⣠⠾⠅⠈⠀⠙⠀⠀⠀⠈⠀⠀⢀⣀⣓⡀⠉⠀⠬⠕⢄⠀⠀  
+⠀⣰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠶⢦⡀⠑⠀⠀⠀⠀⠈⢧⠀  
+⠀⡇⠀⠀⠀⠀⠀⢤⣀⣀⣀⣀⡀⢀⣀⣀⠙⠀⠀⠀⠀⠀⠀⢸⡄  
+⠀⢹⡀⠀⠀⠀⠀⡜⠁⠀⠀⠙⡴⠁⠀⠀⠱⡄⠀⠀⠀⠀⠀⣸⠀  
+⠀⠀⠱⢄⡀⠀⢰⣁⣒⣒⣂⣰⣃⣀⣒⣒⣂⢣⠀⠀⠀⢀⡴⠁⠀  
+⠀⠀⠀⠀⠙⠲⢼⡀⠀⠙⠀⢠⡇⠀⠛⠀⠀⣌⣀⡤⠖⠉⠀⠀⠀  
+⠀⠀⠀⠀⠀⠀⢸⡗⢄⣀⡠⠊⠈⢦⣀⣀⠔⡏⠀⠀⠀⠀⠀⠀⠀  
+⠀⠀⠀⠀⠀⠀⠈⡇⠀⢰⠁⠀⠀⠀⢣⠀⠀⣷⠀⠀⠀⠀This app will choose a serie of exercices for you, no more excuses.  
+⠀⠀⠀⠀⣠⠔⠊⠉⠁⡏⠀⠀⠀⠀⠘⡆⠤⠿⣄⣀⠀⠀⠀⠀⠀  
+⠀⠀⠀⠀⣧⠸⠒⣚⡩⡇⠀⠀⠀⠀⠀⣏⣙⠒⢴⠈⡇⠀⠀⠀⠀  
+⠀⠀⠀⠀⠈⠋⠉⠀⠀⢳⡀⠀⠀⠀⣸⠁⠈⠉⠓⠚⠁⠀⠀⠀⠀  
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠛⠛
 
 ## Usage
 
@@ -17,6 +30,7 @@ Notes:
 - some exercices have placeholders to avoid errors, just erase them.
 - `PrintRune` is already integrated
 - before running any test, uncomment the tested function in your main.go
+- once in the `test` directory, run `go run .`
 
 ## Architecture
 
@@ -25,12 +39,14 @@ Notes:
 │   ├── .subjects
 │   ├── go.mod
 │   └── main.go
+├── fetch_files.sh
 ├── README.md
 └── test
 ```
 
 - `.subjects` contains all the subjects files (md) and templates (go)
 - `test` is the folder where the app will gather your test files (md and go)
+- `fetch_files.sh` is the script that can fetch and adapt the files from the edu01 repo.
 
 Note: **the test folder will be entirely erased after each run**.
 
