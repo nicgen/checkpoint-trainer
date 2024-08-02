@@ -9,7 +9,7 @@ func printif(str string) string {
 }
 
 // equivalent of the main test
-func maPrintIfin() {
+func PrintIf() {
 	fmt.Print(printif("abcdefz"))
 	fmt.Print(printif("abc"))
 	fmt.Print(printif(""))
