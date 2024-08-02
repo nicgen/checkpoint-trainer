@@ -1,9 +1,10 @@
 #! /usr/bin/env bash
 
 # NEW subjects
-arr=(DigitLen ItoaBase NotDecimal ConcatSlice IsCapitalized RevConcatAlternate)
+arr=(Atoi Itoa)
 
 # CHANGELOG
+# 08/02/2024 added: itoa atoi
 # 07/31/2024 added: digitlen itoabase notdecimal concatslice iscapitalized revconcatalternate
 
 # base PATH
