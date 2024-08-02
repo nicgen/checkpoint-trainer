@@ -4,7 +4,7 @@ func reduceint(a []int, f func(int, int) int) {
 }
 
 // equivalent of the main test
-func ReduceInt(a []int, f func(int, int) int) {
+func ReduceInt() {
 	mul := func(acc int, cur int) int {
 		return acc * cur
 	}

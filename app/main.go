@@ -16,6 +16,7 @@ import (
 
 // Categories and their corresponding subjects
 var categories = map[string][]string{
+	"0%":   {"Atoi", "Itoa"},
 	"10%":  {"DisplayAlpham", "DisplayAlrevm", "DisplayFirstparam", "DisplayLastparam", "ParamCount", "PrintDigits", "CheckNumber"},
 	"20%":  {"CountDown", "StrLen", "PrintIf", "PrintIfNot", "RectPerimeter"},
 	"30%":  {"Gcd", "FirstRune", "LastRune", "LastWord", "ReduceInt", "HashCode", "DigitLen"},
@@ -102,7 +103,7 @@ func main() {
 // getOrderedCategories returns the categories in a fixed order
 func getOrderedCategories() []string {
 	return []string{
-		"10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%",
+		"0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%",
 	}
 }
 
@@ -272,7 +273,7 @@ func printAscii(str string) {
 
 func chooseRandomString(choices []string) string {
 	// Seed the random number generator to ensure different results each run
-	rand.Seed(time.Now().UnixNano())
+	rand.Seed(time.Now().UnixNano()) // needed for older version of go
 	// Generate a random index in the range [0, len(choices)-1]
 	randomIndex := rand.Intn(len(choices))
 
