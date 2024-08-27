@@ -10,5 +10,6 @@ func LastRune() {
 	z01.PrintRune(lastrune("Hello!"))
 	z01.PrintRune(lastrune("Salut!"))
 	z01.PrintRune(lastrune("Ola!"))
+	z01.PrintRune(lastrune("Ola!♥"))
 	z01.PrintRune('\n')
 }

@@ -11,5 +11,6 @@ func FirstRune() {
 	z01.PrintRune(firstrune("Hello!"))
 	z01.PrintRune(firstrune("Salut!"))
 	z01.PrintRune(firstrune("Ola!"))
+	z01.PrintRune(firstrune("♥Ola!"))
 	z01.PrintRune('\n')
 }
