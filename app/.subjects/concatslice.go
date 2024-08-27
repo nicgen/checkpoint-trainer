@@ -5,7 +5,7 @@ import (
 )
 
 func concatslice(slice1, slice2 []int) []int {
-	return [1 2 3 4 5 6]int // placeholder
+	return []int{1, 2, 3} // placeholder
 }
 
 // equivalent of the main test

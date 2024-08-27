@@ -20,7 +20,7 @@ var categories = map[string][]string{
 	"10%":  {"DisplayAlpham", "DisplayAlrevm", "DisplayFirstparam", "DisplayLastparam", "ParamCount", "PrintDigits", "CheckNumber"},
 	"20%":  {"CountDown", "StrLen", "PrintIf", "PrintIfNot", "RectPerimeter"},
 	"30%":  {"Gcd", "FirstRune", "LastRune", "LastWord", "ReduceInt", "HashCode", "DigitLen"},
-	"40%":  {"AlphaMirror", "Chunk", "Doop", "FindPrevPrime", "FoldInt", "SearchReplace", "TabMult", "RetainFirstHalf", "IsCapitalized", "PrintMemory", "Itoa"},
+	"40%":  {"AlphaMirror", "Chunk", "Doop", "FindPrevPrime", "FoldInt", "SearchReplace", "TabMult", "RetainFirstHalf", "IsCapitalized", "PrintMemory"},
 	"50%":  {"Inter", "IsPowerof2", "PigLatin", "PrintBits", "ReverseBits", "RomanNumbers", "SwapBits", "Union", "WdMatch", "ConcatSlice"},
 	"60%":  {"PrintHex", "RepeatAlpha", "SortWordArr", "ZipString", "NotDecimal", "RevConcatAlternate"},
 	"70%":  {"AddPrimeSum", "Fprime", "Hiddenp", "Revwstr", "Rostring", "Split"},

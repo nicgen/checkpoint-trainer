@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
-	"piscine"
 )
 
-func revconcatalternate(slice1,slice2 []int) []int {
-	return [3 6 2 5 1 4] // placeholder
+func revconcatalternate(slice1, slice2 []int) []int {
+	return []int{1, 2, 3} // placeholder
 }
 
 // equivalent of the main test
