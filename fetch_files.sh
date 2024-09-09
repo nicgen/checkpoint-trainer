@@ -1,14 +1,15 @@
 #! /usr/bin/env bash
 
 # NEW subjects
-arr=(Atoi Itoa)
+arr=(CamelToSnakeCase FifthAndSkip)
 
 # CHANGELOG
+# 09/09/2024 added: CamelToSnakeCase FifthAndSkip ExpandStr CountCharacter FromTo PrintRevComb ReverseStrCap
 # 08/02/2024 added: itoa atoi
 # 07/31/2024 added: digitlen itoabase notdecimal concatslice iscapitalized revconcatalternate
 
 # base PATH
-base=/home/nic/dev/go/go-checkpoint-trainer/app/.subjects
+base=/home/nic/dev/golang/go-checkpoint-trainer/app/.subjects
 
 # FUNC
 lower() {
@@ -24,7 +25,7 @@ for elmnt in "${arr[@]}"; do
     echo "$elmnt.go already exists"
   else 
     echo "$elmnt.go does not exist."
-    if curl "https://raw.githubusercontent.com/01-edu/public/master/subjects/$elmnt/main.go" -o "$file.go"; then
+    if curl "https://raw.githubusercontent.com/01-edu/public/master/subjects/$lower/main.go" -o "$file.go"; then
       echo "$elmnt.go retrieved"
     else
       echo "$elmnt.go failed"
@@ -42,7 +43,7 @@ for elmnt in "${arr[@]}"; do
   if [ -f "$file.md" ]; then
     echo "$elmnt.md already exists"
   else
-    if curl "https://raw.githubusercontent.com/01-edu/public/master/subjects/$elmnt/README.md" -o "$file.md"; then
+    if curl "https://raw.githubusercontent.com/01-edu/public/master/subjects/$lower/README.md" -o "$file.md"; then
       echo "$elmnt.md retrieved"
     else
       echo "$elmnt.md failed"
